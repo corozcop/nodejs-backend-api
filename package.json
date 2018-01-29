@@ -1,14 +1,14 @@
 {
-  "name": "NodeJS-API-Resful",
+  "name": "nodejs-backend-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node JS Backend API Resful with Sequelize ORM, JWT",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js src/server.js --exec 'npm run lint && node'",
     "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlos Orozco Pineda",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.14.0",
