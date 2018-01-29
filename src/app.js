@@ -1,2 +1,11 @@
+const express = require('express')
+const app = express()
+const morgan = require('morgan')
+const bodyParser = require('body-parser')
 
-console.log('running')
+app.use(morgan('dev'))
+app.use('/upload', express.static('upload'))
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+
+module.exports = app
